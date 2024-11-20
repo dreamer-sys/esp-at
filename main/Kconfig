@@ -123,11 +123,11 @@ menu "AT MQTT authentication method"
     
 config AT_MQTT_BROKER_AUTH_CLIENT
     bool "Broker authenticates clients, mqtt_ca partition MUST exist in at_customize.csv"
-    default y
+    default n
 
 config AT_MQTT_CLIENT_AUTH_BROKER
     bool "Client authenticates Broker, mqtt_cert and mqtt_key partition MUST exist in at_customize.csv"
-    default y
+    default n
 endmenu
 
 config AT_HTTP_COMMAND_SUPPORT
